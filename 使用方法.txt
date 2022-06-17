@@ -1,0 +1,4 @@
+在需要应用的页面的body结束标签前（即 </body>标签）添加以下js引用代码：
+
+<script src="https://cdn.jsdelivr.net/gh/fage2022/referrer-and-city-limit@v0.1/check-user-from.js"></script>
+
