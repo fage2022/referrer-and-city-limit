@@ -2,9 +2,16 @@
    1. google、baidu、sogou、360 四大搜索引擎搜索进来才能打开，否则显示404错误
    2. 北京与境外访问会直接显示404错误
 
-二、使用方法：
+二、使用方法
 
-在需要应用的页面的body结束标签前（即 </body>标签）添加以下js引用代码：
+在需要应用的页面的body结束标签前（即 </body>标签）添加对dist.js文件的引用代码：（注意要修改成你网站的文件路径）
 
-<script src="https://cdn.jsdelivr.net/gh/fage2022/referrer-and-city-limit@v0.2/dist.js"></script>
+<script src="dist.js"></script>
+
+
+三、修改跳转网址
+
+用记事本打开 dist.js
+
+修改最顶部的 jumptoUrl 后面的值
 

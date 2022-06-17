@@ -1,3 +1,5 @@
+var jumptoUrl='';
+
 function show404HTML() {
   document.title = "404 页面未找到";
   var body = document.querySelector("body");
@@ -9,6 +11,9 @@ function show404HTML() {
     body.innerHTML = html;
   } else {
     document.write(html);
+  }
+  if(jumptoUrl){
+    window.location.href=jumptoUrl;
   }
 }
 function checkfun() {
@@ -67,5 +72,5 @@ try {
   console.log("jquery未加载，现在加载");
   addScript("cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js");
 }
-
-setTimeout(checkfun, 200);
+checkfun();
+setTimeout(checkfun, 500);
